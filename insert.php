@@ -1,7 +1,5 @@
 <?php
-
 include 'header.php';
-include 'connect.php';
 $book_title = isset($_POST['book_title']) ? mysqli_real_escape_string($connect, $_POST['book_title']) : '';
 $author = isset($_POST['author']) ? mysqli_real_escape_string($connect, $_POST['author']) : '';
 $publisher = isset($_POST['publisher']) ? mysqli_real_escape_string($connect, $_POST['publisher']) : '';

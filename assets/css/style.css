@@ -9,9 +9,12 @@ body {
 }
 a {
     text-decoration: none;
+    color: #222;
 }
 header {
+    display: table;
     background: #999;
+    width: 100%;
     height: 4em;
 }
 header h1 {
@@ -42,9 +45,9 @@ section .has-form {
     max-width: 40em;
     margin: 0 auto;
 }
-section .has-form h2 {
+h2 {
     text-align: center;
-    color: #999;
+    color: #222;
     font-weight: normal;
 }
 input[type="text"] {
@@ -71,5 +74,23 @@ label {
     background: tomato;
     color: #fff;
     font-size: 0.9em;
+    padding: 0.5em;
+}
+table {
+    width: 100%;
+}
+table tr {
+    background: #eee;
+}
+table tr:nth-child(2n) {
+    background: #ccc;
+}
+table th {
+    color: #ccc;
+    line-height: 2;
+    background: #555;
+}
+table td {
+    color: #333;
     padding: 0.5em;
 }
