@@ -1,6 +1,7 @@
 <?php
 include 'header.php';
-$query = "SELECT * FROM book";
+$table = 'book';
+$query = "SELECT * FROM $table";
 $result = mysqli_query($connect, $query);
 $count = mysqli_num_rows($result);
 $i = 1;
