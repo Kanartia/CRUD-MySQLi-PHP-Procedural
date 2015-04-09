@@ -28,7 +28,7 @@ $i = 1;
                         <td><?php echo $row['author']; ?></td>
                         <td><?php echo $row['publisher']; ?></td>
                         <td>
-                            <a href="">Ubah</a> | 
+                            <a href="edit.php?id=<?php echo $row['id_book']; ?>">Ubah</a> | 
                             <a href="delete.php?id=<?php echo $row['id_book']; ?>">Hapus</a>
                         </td>
                     </tr>

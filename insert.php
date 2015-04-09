@@ -6,6 +6,8 @@ $publisher = isset($_POST['publisher']) ? mysqli_real_escape_string($connect, $_
 if (isset($_POST['save'])) {
     $query = "INSERT INTO book (id_book, book_title, author, publisher) VALUES (null,'$book_title', '$author', '$publisher')";
     $result = mysqli_query($connect, $query);
+    
+    echo '<meta http-equiv="refresh" content="1;url=index.php">';
 }
 isset($result) ? $message = '<p class="message">Save success</p>' : $message = '';
 ?>
